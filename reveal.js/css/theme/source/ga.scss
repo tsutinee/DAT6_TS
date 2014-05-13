@@ -1,0 +1,43 @@
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is brown.
+ *
+ * This theme is Copyright (C) 2014 Alessandro Gagliardi - it is MIT licensed.
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+@font-face {
+	font-family: PFDinTextPro-Regular;
+	src: url('http://eklypse.github.io/DAT6/fonts/PFDinPro/PFDinTextPro-Regular.ttf');
+}
+
+@font-face {
+	font-family: PFDinTextCompPro-Regular;
+	src: url('http://eklypse.github.io/DAT6/fonts/PFDinPro/PFDinTextCompPro-Regular.ttf');
+}
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: PFDinTextPro-Regular, 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif;
+$mainColor: #000;
+$headingFont: PFDinTextCompPro-Regular, 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif;
+$headingColor: #383D3D;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$backgroundColor: #F0F1EB;
+$linkColor: #51483D;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: #26351C;
+
+.reveal a:not(.image) {
+  line-height: 1.3em;
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
